@@ -32,5 +32,16 @@
 		font-size: rem(36);
 		line-height: 1.25; /* 45/36 */
 		color: $mainColor;
+		span {
+			color: $purpleColor;
+		}
+		&_big {
+			font-size: rem(44);
+			line-height: math.div(55, 44);
+		}
 	}
+}
+
+.text {
+	line-height: math.div(32, 16);
 }
