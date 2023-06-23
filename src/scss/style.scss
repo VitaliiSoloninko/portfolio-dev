@@ -102,6 +102,7 @@ body {
 @if ($responsiveType==1) {
 	// Чуйна
 	[class*="__container"] {
+		min-height: 100%;
 		@if ($maxWidthContainer>0) {
 			max-width: rem($containerWidth);
 			margin: 0 auto;
