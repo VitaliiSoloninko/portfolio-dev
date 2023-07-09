@@ -81,3 +81,22 @@
 		}
 	}
 }
+//========================================================================================================================================================
+.category-link {
+	display: inline-block;
+	border: 1px solid #f1f1f1;
+	border-radius: rem(5);
+	color: $grayColor;
+	font-size: rem(12);
+	line-height: math.div(15, 12);
+	padding: rem(4) rem(8);
+	transition: all 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: $purpleColor;
+			border: rem(1) solid $purpleColor;
+			color: #fff;
+		}
+	}
+}
+//========================================================================================================================================================
