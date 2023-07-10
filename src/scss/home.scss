@@ -358,3 +358,30 @@
 		}
 	}
 }
+
+//========================================================================================================================================================
+
+.career {
+	// .career__container
+
+	&__container {
+		/*display: flex;
+		flex-direction: column;
+		justify-content: center;
+		*/
+		padding-top: rem(80);
+		padding-bottom: rem(30);
+
+		display: grid;
+		align-items: center;
+		grid-auto-flow: column;
+		grid-template-columns: auto 1fr;
+		grid-template-rows: auto auto;
+	}
+	// .career__tabs
+
+	&__tabs {
+		display: grid;
+		grid-template-columns: auto 1fr;
+	}
+}
