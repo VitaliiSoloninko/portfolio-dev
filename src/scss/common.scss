@@ -43,15 +43,15 @@
 	&__value {
 		font-family: "Plus Jakarta Sans";
 		font-weight: 700;
-		font-size: rem(36);
 		line-height: 1.25; /* 45/36 */
 		color: $mainColor;
+		@include adaptiveValue("font-size", 36, 28);
 		span {
 			color: $purpleColor;
 		}
 		&_big {
-			font-size: rem(44);
 			line-height: math.div(55, 44);
+			@include adaptiveValue("font-size", 44, 36);
 		}
 	}
 }

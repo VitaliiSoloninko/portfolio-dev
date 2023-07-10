@@ -76,28 +76,28 @@ function initSliders() {
 				prevEl: '.portfolio__arrow_left',
 				nextEl: '.portfolio__arrow_right',
 			},
-			/*
+
 			// Брейкпоінти
 			breakpoints: {
-				640: {
-					slidesPerView: 1,
-					spaceBetween: 0,
+				320: {
+					slidesPerView: 1.2,
+					spaceBetween: 10,
 					autoHeight: true,
 				},
-				768: {
+				650: {
 					slidesPerView: 2,
 					spaceBetween: 20,
 				},
 				992: {
 					slidesPerView: 3,
-					spaceBetween: 20,
-				},
-				1268: {
-					slidesPerView: 4,
 					spaceBetween: 30,
 				},
+				1200: {
+					slidesPerView: 3,
+					spaceBetween: 56,
+				},
 			},
-			*/
+
 			// Події
 			on: {
 
