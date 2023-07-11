@@ -365,23 +365,43 @@
 	// .career__container
 
 	&__container {
-		/*display: flex;
-		flex-direction: column;
-		justify-content: center;
-		*/
 		padding-top: rem(80);
 		padding-bottom: rem(30);
-
 		display: grid;
-		align-items: center;
+		align-content: center;
 		grid-auto-flow: column;
 		grid-template-columns: auto 1fr;
 		grid-template-rows: auto auto;
+		@include adaptiveValue("column-gap", 144, 20);
+		@include adaptiveValue("row-gap", 80, 20);
 	}
-	// .career__tabs
+	// .career__navigation
 
-	&__tabs {
+	&__navigation {
 		display: grid;
-		grid-template-columns: auto 1fr;
+		gap: rem(9);
+	}
+
+	// .career__content
+
+	&__content {
+		grid-row: span 2;
+	}
+}
+
+.navigation-career {
+	// .navigation-career__title
+
+	&__title {
+		padding: rem(14) rem(24);
+		text-align: left;
+		line-height: math.div(19, 16);
+	}
+}
+
+.content-career {
+	// .content-career__body
+
+	&__body {
 	}
 }
