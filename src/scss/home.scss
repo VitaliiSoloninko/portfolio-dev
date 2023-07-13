@@ -179,6 +179,7 @@
 		line-height: math.div(24, 14);
 	}
 }
+
 //========================================================================================================================================================
 
 .portfolio {
@@ -406,7 +407,6 @@
 		}
 	}
 }
-
 .navigation-career {
 	display: grid;
 	// .navigation-career__title
@@ -449,7 +449,6 @@
 		}
 	}
 }
-
 .content-career {
 	// .content-career__body
 
@@ -546,6 +545,112 @@
 			position: absolute;
 			left: 0;
 			top: em(10, 16);
+		}
+	}
+}
+
+//========================================================================================================================================================
+
+.blog {
+	// .blog__container
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: rem(30);
+		padding-top: rem(80);
+	}
+
+	// .blog__title
+
+	&__title {
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 144, 30);
+		}
+	}
+
+	// .blog__items
+
+	&__items {
+		align-self: stretch;
+		display: grid;
+		@include adaptiveValue("gap", 40, 20);
+		grid-template-columns: repeat(auto-fit, minmax(rem(280), 1fr));
+	}
+
+	// .blog__item
+
+	&__item {
+	}
+}
+.item-blog {
+	min-height: 100%;
+	display: flex;
+	border-radius: rem(8);
+	overflow: hidden;
+	flex-direction: column;
+	border: 1px solid #f1f1f1;
+	// .item-blog__image-ibg
+
+	&__image-ibg {
+		overflow: hidden;
+		padding-bottom: percent(243, 361);
+		img {
+			transition: transform 0.8s ease 0s;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				img {
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+
+	// .item-blog__body
+
+	&__body {
+		padding: rem(16) rem(16) rem(24) rem(16);
+		display: grid;
+		gap: rem(20);
+	}
+
+	// .item-blog__title
+
+	&__title {
+		font-weight: 500;
+		line-height: math.div(24, 16);
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $purpleColor;
+			}
+		}
+	}
+
+	// .item-blog__date
+
+	&__date {
+		justify-self: start;
+	}
+
+	// .item-blog__text
+
+	&__text {
+	}
+
+	// .item-blog__link
+
+	&__link {
+		margin-top: rem(22);
+		justify-self: center;
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $purpleColor;
+			}
 		}
 	}
 }
