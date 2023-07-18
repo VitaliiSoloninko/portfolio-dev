@@ -762,6 +762,11 @@
 	// .skills__body
 
 	&__body {
+		display: grid;
+		gap: rem(40);
+		@media (min-width: $mobile) {
+			grid-template-columns: 1fr 1fr;
+		}
 	}
 
 	// .skills__timeline
@@ -777,23 +782,72 @@
 
 .timeline {
 	// .timeline__item
-
+	display: grid;
+	@include adaptiveValue("gap", 64, 20);
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		left: rem(12);
+		top: em(2.5, 16);
+		height: 100%;
+		width: 1px;
+		background-color: #f1f1f1;
+	}
 	&__item {
+		padding-left: rem(40);
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			left: rem(4);
+			top: em(2.5, 16);
+			width: rem(16);
+			height: rem(16);
+			border-radius: 50%;
+			z-index: 3;
+			background-color: #f1f1f1;
+		}
+		&:last-child {
+			&::after {
+				content: "";
+				z-index: 2;
+				position: absolute;
+				width: 1px;
+				height: 100%;
+				left: rem(12);
+				bottom: 0;
+				background-color: #fff;
+			}
+		}
 	}
 
 	// .timeline__title
 
 	&__title {
+		line-height: math.div(20, 16);
+		font-weight: 500;
+		&:not(:last-child) {
+			margin-bottom: rem(10);
+		}
 	}
 
 	// .timeline__text
 
 	&__text {
+		font-size: rem(14);
+		line-height: math.div(17, 14);
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 24, 10);
+		}
 	}
 
 	// .timeline__date
 
 	&__date {
+		font-size: rem(14);
+		line-height: math.div(17, 14);
+		font-weight: 500;
 	}
 }
 
@@ -801,6 +855,9 @@
 	// .content-skills__text
 
 	&__text {
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 64, 20);
+		}
 	}
 
 	// .content-skills__items
@@ -811,15 +868,35 @@
 	// .content-skills__item
 
 	&__item {
+		display: grid;
+		@include adaptiveValue("margin-bottom", 40, 20);
 	}
 
 	// .content-skills__label
 
 	&__label {
+		font-weight: 500;
+		line-height: math.div(17, 16);
+		&:not(:last-child) {
+			margin-bottom: rem(16);
+		}
 	}
 
 	// .content-skills__line
 
 	&__line {
+		width: 100%;
+		height: rem(8);
+		border-radius: rem(2);
+		background: var(--purple-light, #f5f3fe);
+		position: relative;
+		span {
+			position: absolute;
+			height: 100%;
+			border-radius: rem(2);
+			top: 0;
+			left: 0;
+			background-color: $purpleColor;
+		}
 	}
 }
