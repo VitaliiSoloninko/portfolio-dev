@@ -900,3 +900,150 @@
 		}
 	}
 }
+
+//========================================================================================================================================================
+
+.contacts {
+	// .contacts__container
+	background: #fbfbfb;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-top: rem(80);
+		padding-bottom: rem(30);
+	}
+	// .contacts__body
+
+	&__body {
+		@media (min-width: $mobile) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			@include adaptiveValue("gap", 120, 20);
+		}
+	}
+
+	// .contacts__form
+
+	&__form {
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 50, 30);
+		}
+	}
+
+	// .contacts__body
+
+	&__body {
+	}
+
+	// .contacts__list
+
+	&__list {
+	}
+}
+
+.form {
+	// .form__item
+	display: flex;
+	flex-direction: column;
+
+	&__item {
+	}
+	// .form__item-name
+
+	&__item-name {
+		&:not(:last-child) {
+			margin-bottom: rem(16);
+		}
+	}
+
+	// .form__item-email
+
+	&__item-email {
+		&:not(:last-child) {
+			margin-bottom: rem(24);
+		}
+	}
+
+	// .form__item-textarea
+
+	&__item-textarea {
+		height: rem(190);
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 48, 24);
+		}
+	}
+
+	// .form__input
+
+	&__input {
+		padding: rem(15) rem(24);
+		align-items: center;
+		height: rem(48);
+		width: 100%;
+		border-radius: rem(8);
+		background: var(--white, #fff);
+	}
+
+	// .form__button
+
+	&__button {
+		background-color: $purpleColor;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: rem(49);
+		width: 100%;
+		border-radius: rem(8);
+		color: #fff;
+	}
+}
+
+.list-contacts {
+	// .list-contacts__item
+
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: rem(24);
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 48, 20);
+		}
+	}
+
+	// .list-contacts__icon
+
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: rem(56);
+		height: rem(56);
+		padding: rem(16);
+		border-radius: 16px;
+		background: var(--purple-light, #f5f3fe);
+	}
+
+	// .list-contacts__body
+
+	&__content {
+	}
+
+	// .list-contacts__title
+
+	&__title {
+		font-weight: 500;
+		line-height: math.div(19, 16);
+		&:not(:last-child) {
+			margin-bottom: rem(4);
+		}
+	}
+
+	// .list-contacts__text
+
+	&__text {
+		font-size: rem(14);
+		line-height: math.div(24, 14);
+	}
+}

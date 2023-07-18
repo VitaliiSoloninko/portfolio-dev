@@ -8,7 +8,7 @@
 	<div class="wrapper">
 		@@include('html/_header.htm',{})
 		<main data-fp class="page">
-			<!--
+
 			<section data-fp-section class="page__main main-section">
 				<div class="main-section__container">
 					<div class="main-section__content">
@@ -310,7 +310,6 @@
 				</div>
 			</section>
 
-
 			<section data-fp-section class="page__blog blog">
 				<div class="blog__container">
 					<div class="blog__title title">
@@ -421,7 +420,7 @@
 					</div>
 				</div>
 			</section>
--->
+
 			<section data-fp-section class="page__skills skills">
 				<div class="skills__container">
 					<div class="skills__title title">
@@ -478,6 +477,60 @@
 				</div>
 			</section>
 
+
+			<section data-fp-section class="page__contacts contacts">
+				<div class="contacts__container">
+					<div class="contacts__body">
+						<form action="#" class="contacts__form form">
+							<div class="form__item form__item-name">
+								<input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Name"
+									class="form__input">
+							</div>
+							<div class="form__item form__item-email">
+								<input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Email"
+									class="form__input">
+							</div>
+							<div class="form__item form__item-textarea">
+								<textarea autocomplete="off" name="form[]" placeholder="Message" data-error="Error"
+									class="form__input"></textarea>
+							</div>
+							<button class="form__button">Send Message</button>
+						</form>
+						<div class="contacts__body">
+							<ul class="contacts__list list-contacts">
+								<li class="list-contacts__item">
+									<div class="list-contacts__icon">
+										<img src="@img/contacts/icons/01.svg" alt="Address">
+									</div>
+									<div class="list-contacts__content">
+										<div class="list-contacts__title">Address</div>
+										<a href="" class="list-contacts__text">3424 Layman Avenue, Fayetteville, NC</a>
+									</div>
+								</li>
+								<li class="list-contacts__item">
+									<div class="list-contacts__icon">
+										<img src="@img/contacts/icons/02.svg" alt="Phone">
+									</div>
+									<div class="list-contacts__body">
+										<div class="list-contacts__title">Phone</div>
+										<a href="tel:5014141541" class="list-contacts__text">(501) 414-1541</a>
+									</div>
+								</li>
+								<li class="list-contacts__item">
+									<div class="list-contacts__icon">
+										<img src="@img/contacts/icons/03.svg" alt="E-Mail">
+									</div>
+									<div class="list-contacts__body">
+										<div class="list-contacts__title">E-Mail</div>
+										<a href="mailto:devchapter@gmail.com" class="list-contacts__text">devchapter@gmail.com</a>
+									</div>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		@@include('html/_footer.htm',{})
 	</div>
