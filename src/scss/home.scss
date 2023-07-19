@@ -1,5 +1,4 @@
 //====================================================================================================
-
 .main-section {
 	// .main-section__container
 
@@ -103,9 +102,7 @@
 		max-width: 100%;
 	}
 }
-
 //====================================================================================================
-
 .services {
 	// .services__container
 	background-color: #fbfbfb;
@@ -179,9 +176,7 @@
 		line-height: math.div(24, 14);
 	}
 }
-
 //========================================================================================================================================================
-
 .portfolio {
 	// .portfolio__container
 
@@ -273,9 +268,7 @@
 	&__slide {
 	}
 }
-
 //========================================================================================================================================================
-
 .item-portfolio {
 	border: 1px solid #f5f5f5;
 	border-radius: rem(8);
@@ -359,9 +352,7 @@
 		}
 	}
 }
-
 //========================================================================================================================================================
-
 .career {
 	// .career__container
 	background-color: #fbfbfb;
@@ -525,7 +516,6 @@
 	&__list {
 	}
 }
-
 .list-content-career {
 	// .list-content-career__item
 
@@ -548,9 +538,7 @@
 		}
 	}
 }
-
 //========================================================================================================================================================
-
 .blog {
 	// .blog__container
 
@@ -654,9 +642,7 @@
 		}
 	}
 }
-
 //========================================================================================================================================================
-
 .testimonials {
 	background: #fbfbfb;
 	// .testimonials__container
@@ -690,7 +676,6 @@
 	&__item {
 	}
 }
-
 .item-testimonials {
 	// .item-testimonials__avatar
 	border-radius: rem(8);
@@ -739,9 +724,7 @@
 		align-self: flex-start;
 	}
 }
-
 //========================================================================================================================================================
-
 .skills {
 	// .skills__container
 
@@ -764,8 +747,8 @@
 	&__body {
 		display: grid;
 		gap: rem(40);
-		@media (min-width: $mobile) {
-			grid-template-columns: 1fr 1fr;
+		@media (min-width: em(850)) {
+			grid-template-columns: 1fr percent(658, 1200);
 		}
 	}
 
@@ -779,7 +762,6 @@
 	&__content {
 	}
 }
-
 .timeline {
 	// .timeline__item
 	display: grid;
@@ -850,7 +832,6 @@
 		font-weight: 500;
 	}
 }
-
 .content-skills {
 	// .content-skills__text
 
@@ -900,9 +881,7 @@
 		}
 	}
 }
-
 //========================================================================================================================================================
-
 .contacts {
 	// .contacts__container
 	background: #fbfbfb;
@@ -917,10 +896,9 @@
 	// .contacts__body
 
 	&__body {
-		@media (min-width: $mobile) {
+		@media (min-width: em(850)) {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
-			@include adaptiveValue("gap", 120, 20);
 		}
 	}
 
@@ -932,9 +910,12 @@
 		}
 	}
 
-	// .contacts__body
+	// .contacts__content
 
-	&__body {
+	&__content {
+		@media (min-width: em(850)) {
+			@include adaptiveValue("padding-left", 105, 20);
+		}
 	}
 
 	// .contacts__list
@@ -984,6 +965,14 @@
 		width: 100%;
 		border-radius: rem(8);
 		background: var(--white, #fff);
+		&::placeholder {
+			color: $grayColor;
+		}
+		&:focus {
+			&::placeholder {
+				color: $mainColor;
+			}
+		}
 	}
 
 	// .form__button
@@ -997,7 +986,23 @@
 		width: 100%;
 		border-radius: rem(8);
 		color: #fff;
+		transition: background-color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #6f66d3;
+			}
+		}
 	}
+	&__error {
+		padding: rem(5) rem(24) rem(0) rem(24);
+		color: red;
+		font-size: rem(12);
+	}
+}
+
+textarea.form__input {
+	height: rem(190);
+	resize: vertical;
 }
 
 .list-contacts {
@@ -1021,7 +1026,7 @@
 		width: rem(56);
 		height: rem(56);
 		padding: rem(16);
-		border-radius: 16px;
+		border-radius: rem(16);
 		background: var(--purple-light, #f5f3fe);
 	}
 
@@ -1045,5 +1050,11 @@
 	&__text {
 		font-size: rem(14);
 		line-height: math.div(24, 14);
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $purpleColor;
+			}
+		}
 	}
 }

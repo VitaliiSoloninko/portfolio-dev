@@ -8,7 +8,7 @@
 	<div class="wrapper">
 		@@include('html/_header.htm',{})
 		<main data-fp class="page">
-
+			<!--
 			<section data-fp-section class="page__main main-section">
 				<div class="main-section__container">
 					<div class="main-section__content">
@@ -476,27 +476,29 @@
 					</div>
 				</div>
 			</section>
-
-
+-->
 			<section data-fp-section class="page__contacts contacts">
 				<div class="contacts__container">
 					<div class="contacts__body">
 						<form action="#" class="contacts__form form">
 							<div class="form__item form__item-name">
-								<input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Name"
-									class="form__input">
+								<input autocomplete="off" type="text" name="form[]" data-error="Enter your name" data-required
+									placeholder="Name" class="form__input">
 							</div>
 							<div class="form__item form__item-email">
-								<input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Email"
-									class="form__input">
+								<input autocomplete="off" type="text" name="form[]" data-error="Enter your E-mail"
+									data-required="email" placeholder="Email" class="form__input">
 							</div>
 							<div class="form__item form__item-textarea">
 								<textarea autocomplete="off" name="form[]" placeholder="Message" data-error="Error"
 									class="form__input"></textarea>
 							</div>
-							<button class="form__button">Send Message</button>
+							<div class="form__item">
+								<button type="submit" class="form__button">Send Message</button>
+							</div>
+
 						</form>
-						<div class="contacts__body">
+						<div class="contacts__content">
 							<ul class="contacts__list list-contacts">
 								<li class="list-contacts__item">
 									<div class="list-contacts__icon">
