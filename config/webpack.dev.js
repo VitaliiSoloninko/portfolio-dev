@@ -10,7 +10,7 @@ const builFolder = "dist";
 const rootFolder = path.basename(path.resolve());
 
 let pugPages = fs.readdirSync(srcFolder).filter(fileName => fileName.endsWith('.pug'))
-let htmlPages = [];
+let htmlPages = []
 
 if (!pugPages.length) {
 	htmlPages = [new FileIncludeWebpackPlugin({
@@ -66,6 +66,7 @@ const config = {
 		watchFiles: [
 			`${paths.src}/**/*.html`,
 			`${paths.src}/**/*.pug`,
+			`${paths.src}/**/*.json`,
 			`${paths.src}/**/*.htm`,
 			`${paths.src}/img/**/*.*`
 		],
@@ -128,7 +129,7 @@ const config = {
 						loader: 'string-replace-loader',
 						options: {
 							search: '@img',
-							replace: 'img',
+							replace: '../../img',
 							flags: 'g'
 						}
 					}, {
@@ -137,6 +138,13 @@ const config = {
 							presets: ["@babel/preset-react"]
 						}
 					}
+				],
+			}, {
+				test: /\.(png|jpe?g|gif|svg)$/i,
+				use: [
+					{
+						loader: 'file-loader',
+					},
 				],
 			}
 		],

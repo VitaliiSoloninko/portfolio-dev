@@ -13,8 +13,8 @@
 		align-items: center;
 		flex-direction: column;
 		gap: rem(15);
-		@include adaptiveValue("padding-top", 88, 20);
-		@include adaptiveValue("padding-bottom", 88, 20);
+		@include adaptiveValue("padding-top", 40, 20);
+		@include adaptiveValue("padding-bottom", 40, 20);
 	}
 
 	// .footer__social
