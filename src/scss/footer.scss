@@ -2,8 +2,7 @@
 	display: flex;
 	flex-direction: column;
 }
-
-//====================================================================================================
+//=============================
 .footer {
 	// .footer__container
 
@@ -13,8 +12,8 @@
 		align-items: center;
 		flex-direction: column;
 		gap: rem(15);
-		@include adaptiveValue("padding-top", 88, 20);
-		@include adaptiveValue("padding-bottom", 88, 20);
+		@include adaptiveValue("padding-top", 20, 15);
+		@include adaptiveValue("padding-bottom", 20, 15);
 	}
 
 	// .footer__social
@@ -42,4 +41,4 @@
 		height: auto;
 	}
 }
-//====================================================================================================
+//=============================

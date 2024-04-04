@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+	@@include('html/_head.htm',{ "title":"Portfolio" })
+
+	<body>
+		<div data-fp class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section
+					data-fp-section
+					class="page__portfolio portfolio-page"
+				
+					<div class="portfolio-page__slider swiper">
+						<!-- Частина слайдера, що рухається -->
+						<div class="portfolio-page__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="portfolio-page__slide swiper-slide">
+
+							</div>
+						</div>
+						<!-- Якщо потрібна пагінація -->
+						<div class="swiper-pagination"></div>
+						<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+						<button type="button" class="swiper-button-prev"></button>
+						<button type="button" class="swiper-button-next"></button>
+						<!-- Якщо потрібен скролбар -->
+						<div class="swiper-scrollbar"></div>
+					</div>
+				></section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
