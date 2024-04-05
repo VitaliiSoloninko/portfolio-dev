@@ -874,7 +874,7 @@
 	// .form__item-textarea
 
 	&__item-textarea {
-		height: rem(190);
+		height: rem(140);
 		&:not(:last-child) {
 			@include adaptiveValue("margin-bottom", 24, 16);
 		}
@@ -924,7 +924,7 @@
 	}
 }
 textarea.form__input {
-	height: rem(190);
+	height: rem(140);
 	resize: vertical;
 }
 .list-contacts {
