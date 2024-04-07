@@ -138,8 +138,8 @@
 		display: flex;
 		align-items: center;
 		gap: rem(16);
-		@media (max-width: em(600)) {
-			justify-content: center;
+		@media (max-width: $mobile) {
+			justify-content: space-between;
 		}
 	}
 
@@ -186,6 +186,9 @@
 	// .portfolio__wrapper
 
 	&__wrapper {
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 20, 15);
+		}
 	}
 
 	// .portfolio__slide
