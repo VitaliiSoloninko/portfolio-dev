@@ -92,7 +92,9 @@
 	row-gap: rem(5);
 	@include adaptiveValue("column-gap", 34, 25);
 	&__link {
-		font-size: rem(22);
+		display: block;
+		width: rem(22);
+		height: rem(22);
 		transition: color 0.3s ease 0s;
 		@media (any-hover: hover) {
 			&:hover {

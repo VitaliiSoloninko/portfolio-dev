@@ -1,9 +1,11 @@
-import Swiper, { Navigation } from 'swiper'
+import Swiper from 'swiper'
+import { Navigation, Pagination } from 'swiper/modules'
 import '../../scss/base/swiper.scss'
 
 function initSliders() {
 	if (document.querySelector('.portfolio__slider')) {
 		new Swiper('.portfolio__slider', {
+			modules: [Navigation, Pagination],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 3,
@@ -26,6 +28,10 @@ function initSliders() {
 			navigation: {
 				prevEl: '.portfolio__arrow_left',
 				nextEl: '.portfolio__arrow_right',
+			},
+
+			pagination: {
+				el: '.swiper-pagination',
 			},
 
 			breakpoints: {
