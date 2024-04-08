@@ -5,6 +5,8 @@
 	top: 0;
 	left: 0;
 	z-index: 100;
+	padding-top: rem(5);
+	padding-bottom: rem(5);
 	background-color: rgba(255, 255, 255, 0.75);
 	// .header__container
 
@@ -15,7 +17,7 @@
 		gap: rem(15);
 		padding-top: rem(5);
 		padding-bottom: rem(5);
-		min-height: 123px;
+		min-height: 80px;
 		@media (max-width: $mobile) {
 			min-height: 60px;
 		}
