@@ -282,7 +282,7 @@
 // ===========================
 .career {
 	// .career__container
-	background-color: #fbfbfb;
+	background-color: $grayLightColor;
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -811,7 +811,7 @@
 // ===========================
 .contacts {
 	// .contacts__container
-	background: #fbfbfb;
+	background-color: $grayLightColor;
 	flex: 1 1 auto;
 
 	&__container {
