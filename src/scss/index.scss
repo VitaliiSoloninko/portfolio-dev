@@ -668,11 +668,12 @@
 			@include adaptiveValue("margin-bottom", 40, 20);
 		}
 	}
+
 	// .skills__body
 
 	&__body {
 		display: grid;
-		gap: rem(40);
+		@include adaptiveValue("gap", 150, 40);
 		@media (min-width: em(850)) {
 			grid-template-columns: 1fr percent(658, 1200);
 		}
