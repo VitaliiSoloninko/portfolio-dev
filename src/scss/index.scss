@@ -338,7 +338,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		background-color: #cbc2fc;
+		background-color: $purpleMediumColor;
 		border-radius: rem(8);
 
 		&:not(:last-child) {
@@ -673,9 +673,9 @@
 
 	&__body {
 		display: grid;
-		@include adaptiveValue("gap", 150, 40);
+		@include adaptiveValue("gap", 100, 40);
 		@media (min-width: em(850)) {
-			grid-template-columns: 1fr percent(658, 1200);
+			grid-template-columns: 1fr percent(750, 1200);
 		}
 	}
 
@@ -763,30 +763,66 @@
 	// .content-skills__text
 
 	&__text {
+		font-weight: 500;
+		line-height: math.div(20, 16);
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 60, 20);
+			@include adaptiveValue("margin-bottom", 25, 15);
 		}
 	}
 
 	// .content-skills__items
 
 	&__items {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		@include adaptiveValue("column-gap", 30, 15);
+		row-gap: rem(10);
+		align-items: end;
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 30, 20);
+		}
+		@media (max-width: $mobile) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (max-width: $mobileSmall) {
+			grid-template-columns: auto;
+		}
 	}
 
 	// .content-skills__item
 
 	&__item {
 		display: grid;
-		@include adaptiveValue("margin-bottom", 40, 20);
+		@include adaptiveValue("margin-bottom", 15, 15);
 	}
 
 	// .content-skills__label
 
 	&__label {
+		position: relative;
+		padding-left: rem(25);
 		font-weight: 500;
 		line-height: math.div(17, 16);
 		&:not(:last-child) {
-			margin-bottom: rem(16);
+			margin-bottom: rem(10);
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: rem(15);
+			height: rem(15);
+			border-radius: 50%;
+			background-color: $purpleMediumColor;
+			&--dark {
+				background: $purpleColor;
+			}
+		}
+		&--dark {
+			&::before {
+				background-color: $purpleColor;
+			}
 		}
 	}
 
@@ -794,20 +830,15 @@
 
 	&__line {
 		width: 100%;
-		height: rem(8);
-		border-radius: rem(2);
-		background: var(--purple-light, #f5f3fe);
-		position: relative;
-		span {
-			position: absolute;
-			height: 100%;
-			border-radius: rem(2);
-			top: 0;
-			left: 0;
-			background-color: $purpleColor;
+		padding-left: rem(25);
+		height: rem(1);
+		background: $purpleMediumColor;
+		&--dark {
+			background: $purpleColor;
 		}
 	}
 }
+
 // ===========================
 .contacts {
 	// .contacts__container
