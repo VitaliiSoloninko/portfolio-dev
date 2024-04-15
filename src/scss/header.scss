@@ -142,11 +142,15 @@
 		@media (any-hover: hover) {
 			&:hover {
 				color: $purpleColor;
+				text-decoration: underline;
 			}
 		}
 		@media (max-width: $mobile) {
 			color: #fff;
 			font-size: rem(32);
+		}
+		&._navigator-active {
+			text-decoration: underline;
 		}
 	}
 }

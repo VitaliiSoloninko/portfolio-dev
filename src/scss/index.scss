@@ -154,6 +154,9 @@
 		color: $purpleColor;
 		font-size: rem(12);
 		transition: background-color 0.3s ease 0s;
+		@media (max-width: $mobile) {
+			background-color: $purpleMediumColor;
+		}
 		@media (any-hover: hover) {
 			&:hover {
 				background-color: #cbc2fc;
@@ -330,41 +333,25 @@
 	// .navigation-career__title
 
 	&__title {
-		width: 100%;
-		padding: rem(14) rem(24);
-		text-align: left;
-		line-height: math.div(19, 16);
-		transition: all 0.3s ease 0s;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		transition: all 0.3s ease 0s;
+		padding: rem(14) rem(24);
+		text-align: left;
+		line-height: math.div(19, 16);
 		background-color: $purpleMediumColor;
 		border-radius: rem(8);
-
 		&:not(:last-child) {
 			margin-bottom: rem(9);
 		}
-		&::after {
-			font-size: rem(12);
-			@extend %ic;
-			content: "\e903";
-			display: none;
+		&__text {
 		}
-		._tab-spoller & {
-			&::after {
-				display: block;
-				transform: rotate(90deg);
-			}
+		&__arrow {
 		}
 		&._tab-active {
 			color: #fff;
 			background-color: $purpleColor;
-			&::after {
-				display: block;
-				._tab-spoller & {
-					transform: rotate(-90deg);
-				}
-			}
 		}
 	}
 }

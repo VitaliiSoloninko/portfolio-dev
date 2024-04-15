@@ -5,7 +5,12 @@
 		<div data-fp class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="page">
-				<section data-fp-section class="page__main main-section">
+				<section
+					data-watch="navigator"
+					data-watch-threshold="0.3"
+					data-fp-section
+					class="page__main main-section"
+				>
 					<div class="main-section__container">
 						<div class="main-section__content">
 							<div class="main-section__title title">
@@ -53,7 +58,12 @@
 					</div>
 				</section>
 
-				<section data-fp-section class="page__portfolio portfolio">
+				<section
+					data-watch="navigator"
+					data-watch-threshold="0.3"
+					data-fp-section
+					class="page__portfolio portfolio"
+				>
 					<div class="portfolio__container">
 						<div class="portfolio__header">
 							<div class="portfolio__title title">
@@ -394,7 +404,12 @@
 					</div>
 				</section>
 
-				<section data-fp-section class="page__career career">
+				<section
+					data-watch="navigator"
+					data-watch-threshold="0.3"
+					data-fp-section
+					class="page__career career"
+				>
 					<div data-tabs="768" class="career__container">
 						<div class="career__body">
 							<div class="career__title title">
@@ -409,13 +424,28 @@
 									type="button"
 									class="navigation-career__title _tab-active"
 								>
-									2022 - 2024 Front-end
+									<div class="navigation-career__text">
+										2022 - 2024 Front-end
+									</div>
+									<div class="navigation-career__arrow">
+										<img src="@img/icons/arrow-16.svg" alt="l" />
+									</div>
 								</button>
 								<button type="button" class="navigation-career__title">
-									2012 - 2022 Developer
+									<div class="navigation-career__text">
+										2012 - 2022 Developer
+									</div>
+									<div class="navigation-career__arrow">
+										<img src="@img/icons/arrow-16.svg" alt="l" />
+									</div>
 								</button>
 								<button type="button" class="navigation-career__title">
-									2009 - 2012 IT Teacher
+									<div class="navigation-career__text">
+										2009 - 2012 IT Teacher
+									</div>
+									<div class="navigation-career__arrow">
+										<img src="@img/icons/arrow-16.svg" alt="l" />
+									</div>
 								</button>
 							</nav>
 							<div data-tabs-body class="career__content content-career">
@@ -536,7 +566,12 @@
 					</div>
 				</section>
 
-				<section data-fp-section class="page__skills skills">
+				<section
+					data-watch="navigator"
+					data-watch-threshold="0.3"
+					data-fp-section
+					class="page__skills skills"
+				>
 					<div class="skills__container">
 						<div class="skills__body">
 							<div class="skills__education">
@@ -576,9 +611,6 @@
 								<div class="skills__title title">
 									<div class="title__label">Technologies</div>
 									<h2 class="title__value">Skills</h2>
-								</div>
-								<div class="content-skills__text text">
-									<p>Skills and technologies in my projects</p>
 								</div>
 								<div class="content-skills__items">
 									<div class="content-skills__item">
