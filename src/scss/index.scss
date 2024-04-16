@@ -5,12 +5,12 @@
 		display: grid;
 		align-items: center;
 		grid-template-columns: repeat(2, 1fr);
-		padding-top: rem(80);
-		padding-bottom: rem(30);
+		padding-top: rem(70);
+		padding-bottom: rem(20);
 		column-gap: rem(20);
 		@media (max-width: $mobile) {
 			grid-template-columns: auto;
-			row-gap: rem(30);
+			row-gap: rem(20);
 		}
 	}
 
@@ -23,7 +23,7 @@
 
 	&__title {
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 32, 16);
+			@include adaptiveValue("margin-bottom", 30, 20);
 		}
 	}
 
@@ -31,7 +31,7 @@
 
 	&__text {
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 40, 20);
+			@include adaptiveValue("margin-bottom", 30, 20);
 		}
 	}
 
@@ -109,8 +109,8 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding-top: rem(80);
-		padding-bottom: rem(30);
+		padding-top: rem(70);
+		padding-bottom: rem(20);
 	}
 
 	// .portfolio__header
@@ -290,8 +290,8 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding-top: rem(80);
-		padding-bottom: rem(30);
+		padding-top: rem(70);
+		padding-bottom: rem(20);
 	}
 
 	// .career__body
@@ -301,7 +301,7 @@
 		grid-template-columns: auto;
 		grid-template-rows: auto;
 		@include adaptiveValue("column-gap", 144, 20);
-		@include adaptiveValue("row-gap", 40, 20);
+		@include adaptiveValue("row-gap", 30, 20);
 		@media (min-width: $mobile) {
 			grid-template-columns: auto 1fr;
 			grid-template-rows: auto 1fr;
@@ -342,6 +342,9 @@
 		line-height: math.div(19, 16);
 		background-color: $purpleMediumColor;
 		border-radius: rem(8);
+		@media (max-width: $mobile) {
+			width: 100%;
+		}
 		&:not(:last-child) {
 			margin-bottom: rem(9);
 		}
@@ -366,8 +369,7 @@
 	// .content-career__header
 
 	&__header {
-		@include adaptiveValue("padding-bottom", 24, 15);
-		border-bottom: 1px solid #f1f1f1;
+		@include adaptiveValue("padding-bottom", 30, 20);
 	}
 
 	// .content-career__title
@@ -421,7 +423,6 @@
 	// .content-career__main
 
 	&__main {
-		@include adaptiveValue("padding-top", 24, 15);
 	}
 
 	// .content-career__list
@@ -468,7 +469,7 @@
 
 	&__title {
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 40, 20);
+			@include adaptiveValue("margin-bottom", 30, 20);
 		}
 	}
 
@@ -563,15 +564,15 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding-top: rem(80);
-		padding-bottom: rem(30);
+		padding-top: rem(70);
+		padding-bottom: rem(20);
 	}
 
 	// .testimonials__title
 
 	&__title {
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 90, 70);
+			@include adaptiveValue("margin-bottom", 80, 60);
 		}
 	}
 
@@ -652,7 +653,7 @@
 
 	&__title {
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 40, 20);
+			@include adaptiveValue("margin-bottom", 30, 20);
 		}
 	}
 
@@ -766,7 +767,7 @@
 		row-gap: rem(10);
 		align-items: end;
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 30, 20);
+			@include adaptiveValue("margin-bottom", 20, 16);
 		}
 		@media (max-width: $mobile) {
 			grid-template-columns: repeat(2, 1fr);
@@ -836,8 +837,8 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding-top: rem(80);
-		padding-bottom: rem(30);
+		padding-top: rem(70);
+		padding-bottom: rem(15);
 	}
 	// .contacts__body
 
@@ -852,7 +853,7 @@
 
 	&__form {
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 20, 16);
+			@include adaptiveValue("margin-bottom", 20, 10);
 		}
 	}
 
