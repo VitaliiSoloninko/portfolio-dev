@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240422173835">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div data-fp class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__logo"><img src="img/logo.svg" alt="Logo" /></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a data-goto=".main-section" href="#" class="menu__link">About me</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto=".portfolio" href="#" class="menu__link">Portfolios</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto=".career" href="#" class="menu__link">Experience</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto=".skills__education" href="#" class="menu__link">Education</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto=".contacts" href="#" class="menu__link">Contacts</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions">
+					<!--
+<a href="" class="header__button">Resume</a>
+-->
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section data-watch="navigator" data-watch-threshold="0.3" data-fp-section class="page__main main-section">
+				<div class="main-section__container">
+					<div class="main-section__content">
+						<div class="main-section__title title">
+							<div class="title__label">MY NAME IS</div>
+							<h1 class="title__value title__value_big">
+								Vitalii <span>Soloninko</span>
+							</h1>
+						</div>
+						<div class="main-section__text text">
+							<p>
+								Creative frontend developer with 2 years of work experience in
+								Front-End development. Proficient in JavaScript. Passionate
+								about UI/UX. Now i'm studying Typescript and Angular.
+							</p>
+						</div>
+						<ul class="main-section__social social">
+							<li class="social__item">
+								<a href="https://github.com/VitaliiSoloninko" class="social__link">
+									<img src="img/icons/github.svg" alt="GitHub" />
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="https://www.linkedin.com/in/vitalii-soloninko-1a3987271/" class="social__link"><img src="img/icons/linkedin.svg" alt="Linkedin" /></a>
+							</li>
+						</ul>
+					</div>
+					<div class="main-section__decor decor-main-section">
+						<div class="decor-main-section__box">
+							<div class="decor-main-section__image">
+								<picture><source srcset="img/main/picture.webp" type="image/webp"><img class="decor-main-section__picture" src="img/main/picture.png" alt="Picture" /></picture>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section data-watch="navigator" data-watch-threshold="0.3" data-fp-section class="page__portfolio portfolio">
+				<div class="portfolio__container">
+					<div class="portfolio__header">
+						<div class="portfolio__title title">
+							<div class="title__label">MY WORKS</div>
+							<h2 class="title__value">Featured Portfolios</h2>
+						</div>
+						<div class="portfolio__controls" data-da=".portfolio__slider,767.98">
+							<button type="button" class="portfolio__arrow portfolio__arrow_left">
+								<img src="img/icons/arrow.svg" alt="l" />
+							</button>
+							<button type="button" class="portfolio__arrow portfolio__arrow_right">
+								<img src="img/icons/arrow.svg" alt="r" />
+							</button>
+						</div>
+					</div>
+					<div class="portfolio__slider swiper">
+						<div class="portfolio__wrapper swiper-wrapper">
+							<div class="portfolio__slide swiper-slide furino">
+								<article class="item-portfolio">
+									<a href="https://vitaliisoloninko.github.io/furino/" class="item-portfolio__image-ibg">
+										<picture><source srcset="img/portfolio/furino.webp" type="image/webp"><img src="img/portfolio/furino.jpg" alt="Furino" /></picture>
+									</a>
+									<div class="item-portfolio__body">
+										<h4 class="item-portfolio__title">
+											<a href="https://vitaliisoloninko.github.io/furino/" class="item-portfolio__link-title">Furino - Furniture shop
+											</a>
+										</h4>
+										<div class="item-portfolio__footer">
+											<div class="item-portfolio__category category-link">
+												JavaScript
+											</div>
+											<div class="item-portfolio__category category-link">
+												SCSS
+											</div>
+											<div class="item-portfolio__category category-link">
+												JSON
+											</div>
+											<a href="https://vitaliisoloninko.github.io/furino/" class="item-portfolio__link"><img src="img/icons/link.svg" alt="link" /></a>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="portfolio__slide swiper-slide farmvest">
+								<article class="item-portfolio">
+									<a href="https://vitaliisoloninko.github.io/farmvest/" class="item-portfolio__image-ibg">
+										<picture><source srcset="img/portfolio/farmvest.webp" type="image/webp"><img src="img/portfolio/farmvest.jpg" alt="FarmVest" /></picture>
+									</a>
+									<div class="item-portfolio__body">
+										<h4 class="item-portfolio__title">
+											<a href="https://vitaliisoloninko.github.io/farmvest/" class="item-portfolio__link-title">FarmVest - Investment company
+											</a>
+										</h4>
+										<div class="item-portfolio__footer">
+											<div class="item-portfolio__category category-link">
+												JavaScript
+											</div>
+											<div class="item-portfolio__category category-link">
+												GULP
+											</div>
+											<div class="item-portfolio__category category-link">
+												Webpack
+											</div>
+											<a href="https://vitaliisoloninko.github.io/farmvest/" class="item-portfolio__link"><img src="img/icons/link.svg" alt="link" /></a>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="portfolio__slide swiper-slide crowfy">
+								<article class="item-portfolio">
+									<a href="https://vitaliisoloninko.github.io/Growfy/" class="item-portfolio__image-ibg">
+										<picture><source srcset="img/portfolio/Crowfy.webp" type="image/webp"><img src="img/portfolio/Crowfy.jpg" alt="Crowfy" /></picture>
+									</a>
+									<div class="item-portfolio__body">
+										<h4 class="item-portfolio__title">
+											<a href="https://vitaliisoloninko.github.io/Growfy/" class="item-portfolio__link-title">Crowfy - Marketing agency</a>
+										</h4>
+										<div class="item-portfolio__footer">
+											<div class="item-portfolio__category category-link">
+												JavaScript
+											</div>
+											<div class="item-portfolio__category category-link">
+												CSS
+											</div>
+											<div class="item-portfolio__category category-link">
+												HTML
+											</div>
+											<a href="https://vitaliisoloninko.github.io/Growfy/" class="item-portfolio__link"><img src="img/icons/link.svg" alt="link" /></a>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="portfolio__slide swiper-slide homepro">
+								<article class="item-portfolio">
+									<a href="https://vitaliisoloninko.github.io/homepro/" class="item-portfolio__image-ibg">
+										<picture><source srcset="img/portfolio/homepro.webp" type="image/webp"><img src="img/portfolio/homepro.jpg" alt="HomePro" /></picture>
+									</a>
+									<div class="item-portfolio__body">
+										<h4 class="item-portfolio__title">
+											<a href="https://vitaliisoloninko.github.io/homepro/" class="item-portfolio__link-title">HomePro - Home services
+											</a>
+										</h4>
+										<div class="item-portfolio__footer">
+											<div class="item-portfolio__category category-link">
+												JavaScript
+											</div>
+											<div class="item-portfolio__category category-link">
+												GULP
+											</div>
+											<div class="item-portfolio__category category-link">
+												Webpack
+											</div>
+											<a href="https://vitaliisoloninko.github.io/homepro/" class="item-portfolio__link"><img src="img/icons/link.svg" alt="link" /></a>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="portfolio__slide swiper-slide tealand">
+								<article class="item-portfolio">
+									<a href="https://vitaliisoloninko.github.io/TeaLand/" class="item-portfolio__image-ibg">
+										<picture><source srcset="img/portfolio/TeaLand.webp" type="image/webp"><img src="img/portfolio/TeaLand.jpg" alt="TeaLand" /></picture>
+									</a>
+									<div class="item-portfolio__body">
+										<h4 class="item-portfolio__title">
+											<a href="https://vitaliisoloninko.github.io/TeaLand/" class="item-portfolio__link-title">TeaLand - Cafe</a>
+										</h4>
+										<div class="item-portfolio__footer">
+											<div class="item-portfolio__category category-link">
+												JavaScript
+											</div>
+											<div class="item-portfolio__category category-link">
+												GULP
+											</div>
+											<div class="item-portfolio__category category-link">
+												Webpack
+											</div>
+											<a href="https://vitaliisoloninko.github.io/TeaLand/" class="item-portfolio__link"><img src="img/icons/link.svg" alt="link" /></a>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="portfolio__slide swiper-slide rhythm">
+								<article class="item-portfolio">
+									<a href="https://vitaliisoloninko.github.io/Guitar/" class="item-portfolio__image-ibg">
+										<picture><source srcset="img/portfolio/Guitar.webp" type="image/webp"><img src="img/portfolio/Guitar.jpg" alt="Guitar" /></picture>
+									</a>
+									<div class="item-portfolio__body">
+										<h4 class="item-portfolio__title">
+											<a href="https://vitaliisoloninko.github.io/Guitar/" class="item-portfolio__link-title">Rhythm - Guitar shop
+											</a>
+										</h4>
+										<div class="item-portfolio__footer">
+											<div class="item-portfolio__category category-link">
+												JavaScript
+											</div>
+											<div class="item-portfolio__category category-link">
+												CSS
+											</div>
+											<div class="item-portfolio__category category-link">
+												HTML
+											</div>
+											<a href="https://vitaliisoloninko.github.io/Guitar/" class="item-portfolio__link"><img src="img/icons/link.svg" alt="link" /></a>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="portfolio__slide swiper-slide relvise">
+								<article class="item-portfolio">
+									<a href="https://vitaliisoloninko.github.io/Relvise/" class="item-portfolio__image-ibg">
+										<picture><source srcset="img/portfolio/Relvise.webp" type="image/webp"><img src="img/portfolio/Relvise.jpg" alt="Relvise" /></picture>
+									</a>
+									<div class="item-portfolio__body">
+										<h4 class="item-portfolio__title">
+											<a href="https://vitaliisoloninko.github.io/Relvise/" class="item-portfolio__link-title">Relvise - Finance and Consultancy
+											</a>
+										</h4>
+										<div class="item-portfolio__footer">
+											<div class="item-portfolio__category category-link">
+												JavaScript
+											</div>
+											<div class="item-portfolio__category category-link">
+												CSS
+											</div>
+											<div class="item-portfolio__category category-link">
+												HTML
+											</div>
+											<a href="https://vitaliisoloninko.github.io/Relvise/" class="item-portfolio__link"><img src="img/icons/link.svg" alt="link" /></a>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="portfolio__slide swiper-slide smartspace">
+								<article class="item-portfolio">
+									<a href="https://vitaliisoloninko.github.io/SmartSpace/" class="item-portfolio__image-ibg">
+										<picture><source srcset="img/portfolio/SmartSpace.webp" type="image/webp"><img src="img/portfolio/SmartSpace.jpg" alt="SmartSpace" /></picture>
+									</a>
+									<div class="item-portfolio__body">
+										<h4 class="item-portfolio__title">
+											<a href="https://vitaliisoloninko.github.io/SmartSpace/" class="item-portfolio__link-title">Relvise - Finance and Consultancy
+											</a>
+										</h4>
+										<div class="item-portfolio__footer">
+											<div class="item-portfolio__category category-link">
+												JavaScript
+											</div>
+											<div class="item-portfolio__category category-link">
+												CSS
+											</div>
+											<div class="item-portfolio__category category-link">
+												HTML
+											</div>
+											<a href="https://vitaliisoloninko.github.io/SmartSpace/" class="item-portfolio__link"><img src="img/icons/link.svg" alt="link" /></a>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="portfolio__slide swiper-slide portfolio">
+								<article class="item-portfolio">
+									<a href="https://vitaliisoloninko.github.io/Portfolio/" class="item-portfolio__image-ibg">
+										<picture><source srcset="img/portfolio/Portfolio.webp" type="image/webp"><img src="img/portfolio/Portfolio.jpg" alt="Portfolio" /></picture>
+									</a>
+									<div class="item-portfolio__body">
+										<h4 class="item-portfolio__title">
+											<a href="https://vitaliisoloninko.github.io/Portfolio/" class="item-portfolio__link-title">Portfolio - Site with my works
+											</a>
+										</h4>
+										<div class="item-portfolio__footer">
+											<div class="item-portfolio__category category-link">
+												JavaScript
+											</div>
+											<div class="item-portfolio__category category-link">
+												GULP
+											</div>
+											<div class="item-portfolio__category category-link">
+												Webpack
+											</div>
+											<a href="https://vitaliisoloninko.github.io/Portfolio/" class="item-portfolio__link"><img src="img/icons/link.svg" alt="link" /></a>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section data-watch="navigator" data-watch-threshold="0.3" data-fp-section class="page__career career">
+				<div data-tabs="768" class="career__container">
+					<div class="career__body">
+						<div class="career__title title">
+							<div class="title__label">career path</div>
+							<h2 class="title__value">Work Experiences</h2>
+						</div>
+						<nav data-tabs-titles class="career__navigation navigation-career">
+							<button type="button" class="navigation-career__title _tab-active">
+								<div class="navigation-career__text">
+									2022 - 2024 Front-end
+								</div>
+								<div class="navigation-career__arrow">
+									<img src="img/icons/arrow-16.svg" alt="l" />
+								</div>
+							</button>
+							<button type="button" class="navigation-career__title">
+								<div class="navigation-career__text">
+									2012 - 2022 Developer
+								</div>
+								<div class="navigation-career__arrow">
+									<img src="img/icons/arrow-16.svg" alt="l" />
+								</div>
+							</button>
+							<button type="button" class="navigation-career__title">
+								<div class="navigation-career__text">
+									2009 - 2012 IT Teacher
+								</div>
+								<div class="navigation-career__arrow">
+									<img src="img/icons/arrow-16.svg" alt="l" />
+								</div>
+							</button>
+						</nav>
+						<div data-tabs-body class="career__content content-career">
+							<div class="content-career__body">
+								<div class="content-career__header">
+									<div class="content-career__title">
+										Front-end Developer
+										<div class="content-career__link-title">Freelance</div>
+									</div>
+									<div class="content-career__location">
+										Schwerin, Germany
+									</div>
+									<div class="content-career__time">
+										Jun 2022 - Present · Part-time
+									</div>
+									<div class="content-career__categories">
+										<div class="category-link">Java Script</div>
+										<div class="category-link">GULP</div>
+										<div class="category-link">Webpack</div>
+										<div class="category-link">SCSS</div>
+										<div class="category-link">CSS</div>
+										<div class="category-link">HTML</div>
+									</div>
+								</div>
+								<div class="content-career__main">
+									<ul class="content-career__list list-content-career">
+										<li class="list-content-career__item">
+											Code and content optimization for fast work.
+										</li>
+										<li class="list-content-career__item">
+											Responsive web design for any device.
+										</li>
+										<li class="list-content-career__item">
+											Development of different complexity.
+										</li>
+										<li class="list-content-career__item">
+											Using different features.
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="content-career__body">
+								<div class="content-career__header">
+									<div class="content-career__title">
+										IT educational Developer
+										<div class="content-career__link-title">Grand</div>
+									</div>
+									<div class="content-career__location">Rivne, Ukraine</div>
+									<div class="content-career__time">
+										Nov 2012 - Feb 2022 · Full-time
+									</div>
+									<div class="content-career__categories">
+										<div class="category-link">Web design</div>
+										<div class="category-link">Design UX/UI</div>
+										<div class="category-link">Office</div>
+										<div class="category-link">3D</div>
+										<div class="category-link">Video editing</div>
+									</div>
+								</div>
+								<div class="content-career__main">
+									<ul class="content-career__list list-content-career">
+										<li class="list-content-career__item">
+											Development of educational materials
+										</li>
+										<li class="list-content-career__item">
+											Web design - HTML, CSS, Java Script
+										</li>
+										<li class="list-content-career__item">
+											Design UX/UI - Figma, Illustrator, Inkscape
+										</li>
+										<li class="list-content-career__item">
+											MS Office - Word, Excel, PowerPoint
+										</li>
+										<li class="list-content-career__item">
+											3D - Blender, SketchUp
+										</li>
+										<li class="list-content-career__item">
+											Video editing - DaVinci Resolve, Premiere Pro
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="content-career__body">
+								<div class="content-career__header">
+									<div class="content-career__title">
+										Computer courses IT Teacher
+										<div class="content-career__link-title">Grand</div>
+									</div>
+									<div class="content-career__location">Rivne, Ukraine</div>
+									<div class="content-career__time">
+										Sep 2009 - Sep 2012 · Full-time
+									</div>
+									<div class="content-career__categories">
+										<div class="category-link">Web design</div>
+										<div class="category-link">Design UX/UI</div>
+										<div class="category-link">Office</div>
+										<div class="category-link">3D</div>
+										<div class="category-link">Video editing</div>
+									</div>
+								</div>
+								<div class="content-career__main">
+									<ul class="content-career__list list-content-career">
+										<li class="list-content-career__item">
+											Web design - HTML, CSS, Java Script
+										</li>
+										<li class="list-content-career__item">
+											Design UX/UI - Figma, Illustrator, Inkscape
+										</li>
+										<li class="list-content-career__item">
+											MS Office - Word, Excel, PowerPoint
+										</li>
+										<li class="list-content-career__item">
+											3D - Blender, SketchUp
+										</li>
+										<li class="list-content-career__item">
+											Video editing - DaVinci Resolve, Premiere Pro
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section data-watch="navigator" data-watch-threshold="0.3" data-fp-section class="page__skills skills">
+				<div class="skills__container">
+					<div class="skills__body">
+						<div class="skills__education">
+							<div class="skills__title title">
+								<div class="title__label">LEARNING PATH</div>
+								<h2 class="title__value">Education</h2>
+							</div>
+							<div class="skills__timeline timeline">
+								<div class="timeline__item">
+									<div class="timeline__title">
+										National university of water and environmental engineering
+									</div>
+									<div class="timeline__text">
+										Master's degree - Civil engineer
+									</div>
+									<div class="timeline__date">2008 - 2009</div>
+								</div>
+								<div class="timeline__item">
+									<div class="timeline__title">
+										National university of water and environmental engineering
+									</div>
+									<div class="timeline__text">
+										Bachelor's degree - Civil engineer
+									</div>
+									<div class="timeline__date">2004 - 2008</div>
+								</div>
+								<div class="timeline__item">
+									<div class="timeline__title">School</div>
+									<div class="timeline__text">
+										Diploma's degree - High school diploma
+									</div>
+									<div class="timeline__date">1993 - 2004</div>
+								</div>
+							</div>
+						</div>
+						<div class="skills__content content-skills">
+							<div class="skills__title title">
+								<div class="title__label">Technologies</div>
+								<h2 class="title__value">Skills</h2>
+							</div>
+							<div class="content-skills__items">
+								<div class="content-skills__item">
+									<div class="content-skills__label content-skills__label--dark">
+										Javascript
+									</div>
+									<div class="content-skills__line content-skills__line--dark"></div>
+								</div>
+								<div class="content-skills__item">
+									<div class="content-skills__label content-skills__label--dark">
+										CSS/SCSS
+									</div>
+									<div class="content-skills__line content-skills__line--dark"></div>
+								</div>
+								<div class="content-skills__item">
+									<div class="content-skills__label content-skills__label--dark">
+										HTML
+									</div>
+									<div class="content-skills__line content-skills__line--dark"></div>
+								</div>
+								<div class="content-skills__item">
+									<div class="content-skills__label">
+										Front-End Development
+									</div>
+									<div class="content-skills__line"></div>
+								</div>
+								<div class="content-skills__item">
+									<div class="content-skills__label">
+										Responsive Web Design
+									</div>
+									<div class="content-skills__line"></div>
+								</div>
+								<div class="content-skills__item">
+									<div class="content-skills__label">Front-End Design</div>
+									<div class="content-skills__line"></div>
+								</div>
+								<div class="content-skills__item">
+									<div class="content-skills__label">Web Applications</div>
+									<div class="content-skills__line"></div>
+								</div>
+								<div class="content-skills__item">
+									<div class="content-skills__label">
+										User Interface Design (UI)
+									</div>
+									<div class="content-skills__line"></div>
+								</div>
+								<div class="content-skills__item">
+									<div class="content-skills__label">
+										User Experience (UX)
+									</div>
+									<div class="content-skills__line"></div>
+								</div>
+								<div class="content-skills__item">
+									<div class="content-skills__label">Git/GitHub</div>
+									<div class="content-skills__line"></div>
+								</div>
+							</div>
+							<div class="content-skills__text text">
+								<p>Skills on currently creating a project</p>
+							</div>
+							<div class="content-skills__items">
+								<div class="content-skills__item">
+									<div class="content-skills__label content-skills__label--dark">
+										Angular
+									</div>
+									<div class="content-skills__line content-skills__line--dark"></div>
+								</div>
+								<div class="content-skills__item">
+									<div class="content-skills__label content-skills__label--dark">
+										TypeScript
+									</div>
+									<div class="content-skills__line content-skills__line--dark"></div>
+								</div>
+								<div class="content-skills__item">
+									<div class="content-skills__label content-skills__label--dark">
+										REST APIs
+									</div>
+									<div class="content-skills__line content-skills__line--dark"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- 
+				<section data-fp-section class="page__blog blog">
+					<div class="blog__container">
+						<div class="blog__title title">
+							<div class="title__label">MY ARTICLES</div>
+							<h2 class="title__value">Personal Blog</h2>
+						</div>
+						<div class="blog__items">
+							<article class="blog__item item-blog">
+								<a href="" class="item-blog__image-ibg">
+									<picture><source srcset="img/blog/01.webp" type="image/webp"><img src="img/blog/01.jpg" alt="How to prototype in figma" /></picture>
+								</a>
+								<div class="item-blog__body">
+									<h4 class="item-blog__title">
+										<a href="" class="item-blog__title">
+											How to prototype in figma
+										</a>
+									</h4>
+									<div class="item-blog__date date">July 15, 2021</div>
+									<div class="item-blog__text text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Fusce id magna nec ante scelerisque laoreet. Fusce finibus
+										...
+									</div>
+									<a href="" class="item-blog__link">Continue Reading</a>
+								</div>
+							</article>
+							<article class="blog__item item-blog">
+								<a href="" class="item-blog__image-ibg">
+									<img
+										src="img/blog/02.jpg"
+										alt="Being more productive with Notion"
+									/>
+								</a>
+								<div class="item-blog__body">
+									<h4 class="item-blog__title">
+										<a href="" class="item-blog__title">
+											Being more productive with Notion
+										</a>
+									</h4>
+									<div class="item-blog__date date">Aug 8, 2020</div>
+									<div class="item-blog__text text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Fusce id magna nec ante scelerisque laoreet. Fusce finibus
+										...
+									</div>
+									<a href="" class="item-blog__link">Continue Reading</a>
+								</div>
+							</article>
+							<article class="blog__item item-blog">
+								<a href="" class="item-blog__image-ibg">
+									<img
+										src="img/blog/03.jpg"
+										alt="Beginners guide to adobe illustrator"
+									/>
+								</a>
+								<div class="item-blog__body">
+									<h4 class="item-blog__title">
+										<a href="" class="item-blog__title">
+											Beginners guide to adobe illustrator
+										</a>
+									</h4>
+									<div class="item-blog__date date">Feb 19, 2021</div>
+									<div class="item-blog__text text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Fusce id magna nec ante scelerisque laoreet. Fusce finibus
+										...
+									</div>
+									<a href="" class="item-blog__link">Continue Reading</a>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+
+				<section data-fp-section class="page__testimonials testimonials">
+					<div class="testimonials__container">
+						<div class="testimonials__title title">
+							<div class="title__label">MY CLIENTS</div>
+							<h2 class="title__value">Testimonials</h2>
+						</div>
+						<div class="testimonials__items">
+							<div class="testimonials__item item-testimonials">
+								<div class="item-testimonials__avatar-ibg">
+									<picture><source srcset="img/testimonials/01.webp" type="image/webp"><img src="img/testimonials/01.jpg" alt="Amelia Miller" /></picture>
+								</div>
+								<div class="item-testimonials__text text">
+									We were very pleased to hear how you resolved our website's
+									user interface issues and challenges.
+								</div>
+								<div class="item-testimonials__name">Amelia Miller</div>
+								<div class="item-testimonials__profession date">Designer</div>
+							</div>
+							<div class="testimonials__item item-testimonials">
+								<div class="item-testimonials__avatar-ibg">
+									<picture><source srcset="img/testimonials/02.webp" type="image/webp"><img src="img/testimonials/02.jpg" alt="James Delaney" /></picture>
+								</div>
+								<div class="item-testimonials__text text">
+									I’m glad I decided to work with you. The project was delivered
+									on time with all the requirements. Lorem ipsum dolor sit amet,
+									consectetur adipisicing elit. Maxime, delectus.
+								</div>
+								<div class="item-testimonials__name">James Delaney</div>
+								<div class="item-testimonials__profession date">Developer</div>
+							</div>
+							<div class="testimonials__item item-testimonials">
+								<div class="item-testimonials__avatar-ibg">
+									<picture><source srcset="img/testimonials/03.webp" type="image/webp"><img src="img/testimonials/03.jpg" alt="Isabella Bennett" /></picture>
+								</div>
+								<div class="item-testimonials__text text">
+									The management of our projects was always faced with
+									difficulties, but you handled these well.
+								</div>
+								<div class="item-testimonials__name">Isabella Bennett</div>
+								<div class="item-testimonials__profession date">Manager</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				-->
+		</main>
+		<div data-fp-section class="page__bottom bottom-page">
+			<section data-watch class="page__contacts contacts">
+				<div class="contacts__container">
+					<div class="skills__title title">
+						<div class="title__label">Be in touch with me</div>
+						<h2 class="title__value">Contacts</h2>
+					</div>
+					<div class="contacts__body">
+						<form action="#" class="contacts__form form">
+							<div class="form__item form__item-name">
+								<input autocomplete="off" type="text" name="form[]" data-error="Enter your name" data-required placeholder="Name" class="form__input" />
+							</div>
+							<div class="form__item form__item-email">
+								<input autocomplete="off" type="text" name="form[]" data-error="Enter your E-mail" data-required="email" placeholder="Email" class="form__input" />
+							</div>
+							<div class="form__item form__item-textarea">
+								<textarea autocomplete="off" name="form[]" placeholder="Message" data-error="Error" class="form__input"></textarea>
+							</div>
+							<div class="form__item">
+								<button type="submit" class="form__button">Send Message</button>
+							</div>
+						</form>
+						<div class="contacts__content">
+							<ul class="contacts__list list-contacts">
+								<li class="list-contacts__item">
+									<div class="list-contacts__icon">
+										<img src="img/contacts/icons/03.svg" alt="E-Mail" />
+									</div>
+									<div class="list-contacts__body">
+										<div class="list-contacts__title">E-Mail</div>
+										<a href="mailto:vitalii.soloninko@gmail.com" class="list-contacts__text">vitalii.soloninko@gmail.com</a>
+									</div>
+								</li>
+								<li class="list-contacts__item">
+									<div class="list-contacts__icon">
+										<img src="img/contacts/icons/01.svg" alt="Address" />
+									</div>
+									<div class="list-contacts__content">
+										<div class="list-contacts__title">Address</div>
+										<a href="https://www.google.com/maps/place/%D0%A8%D0%B2%D0%B5%D1%80%D0%B8%D0%BD/@53.615988,11.3184325,12z/data=!3m1!4b1!4m6!3m5!1s0x47add992b50ef799:0x4251ae8ad8482c0!8m2!3d53.6355022!4d11.4012499!16zL20vMHFrNDQ?entry=ttu" class="list-contacts__text">Germany, Schwerin</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="footer">
+				<div class="footer__container">
+					<ul class="footer__social social">
+						<li class="social__item">
+							<a href="https://github.com/VitaliiSoloninko" class="social__link">
+								<img src="img/icons/github.svg" alt="GitHub" />
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="https://www.linkedin.com/in/vitalii-soloninko-1a3987271/" class="social__link"><img src="img/icons/linkedin.svg" alt="Linkedin" /></a>
+						</li>
+					</ul>
+					<div class="footer__copy">© 2024 - Vitalii Soloninko</div>
+				</div>
+			</footer>
+		</div>
+
+	</div>
+	<script src="js/app.min.js?_v=20240422173835"></script>
+</body>
+
+</html>
