@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+	@@include('html/_head.htm',{ "title":"Portfolio" })
+	<body>
+		<div data-fp class="wrapper">
+			<main class="page">
+				<section
+					data-watch="navigator"
+					data-watch-threshold="0.3"
+					data-fp-section
+					class="page__works works"
+				>
+					<div class="works__container">
+						<div class="works__header">
+							<div class="works__title title">
+								<div class="title__label">MY WORKS</div>
+								<h2 class="title__value">Featured Portfolios</h2>
+							</div>
+							<div class="works__controls">
+								<div class="works__dotts"></div>
+								<div class="works__arrows">
+									<button
+										type="button"
+										class="portfolio__arrow portfolio__arrow_left"
+									>
+										<img src="@img/icons/arrow.svg" alt="l" />
+									</button>
+									<button
+										type="button"
+										class="portfolio__arrow portfolio__arrow_right"
+									>
+										<img src="@img/icons/arrow.svg" alt="r" />
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="works__slider swiper">
+							<div class="swiper-wrapper">
+								<div class="works__slide swiper-slide">
+									<div class="works__image -ibg">
+										<img src="@img/works/01.jpg" alt="Image" />
+									</div>
+									<a
+										href="#"
+										data-swiper-parallax-x="400%"
+										data-swiper-parallax-opacity="0"
+										data-swiper-parallax-scale="0"
+										class="works__content"
+									>
+										<div class="works__title">Furino</div>
+										<div class="works__text">Furniture shop</div>
+										<div class="works__arrow">
+											<img src="@img" alt="" />
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
