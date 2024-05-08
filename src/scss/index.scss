@@ -1003,3 +1003,78 @@ textarea.form__input {
 	}
 }
 // ===========================
+
+.page {
+	&__works {
+		@include adaptiveValue("padding-top", 40, 20);
+		@include adaptiveValue("padding-bottom", 40, 20);
+	}
+}
+.works {
+	&__container {
+	}
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__title {
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 40, 20);
+		}
+	}
+
+	&__controls {
+	}
+
+	&__dotts {
+	}
+
+	&__arrows {
+		display: flex;
+		gap: rem(16);
+	}
+
+	&__slider {
+	}
+
+	&__slide {
+		border-radius: rem(20);
+		overflow: hidden;
+		position: relative;
+	}
+
+	&__image {
+		padding-bottom: 30%;
+	}
+
+	&__content {
+		position: absolute;
+		right: rem(30);
+		bottom: rem(30);
+	}
+
+	&__text {
+	}
+
+	&__arrow {
+	}
+}
+.title {
+	&__label {
+	}
+
+	&__value {
+	}
+}
+.portfolio {
+	&__arrow {
+		&_left {
+		}
+
+		&_right {
+		}
+	}
+}

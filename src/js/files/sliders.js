@@ -2,6 +2,7 @@ import Swiper from 'swiper'
 import { Navigation, Pagination } from 'swiper/modules'
 import '../../scss/base/swiper.scss'
 
+// main page slider
 function initSliders() {
 	if (document.querySelector('.portfolio__slider')) {
 		new Swiper('.portfolio__slider', {
@@ -58,6 +59,39 @@ function initSliders() {
 		})
 	}
 }
+
+// works page slider
+
+new Swiper('.works__slider', {
+	modules: [Navigation, Pagination],
+	observer: true,
+	observeParents: true,
+	slidesPerView: 1,
+	speed: 800,
+
+	//touchRatio: 0,
+	//simulateTouch: false,
+	//loop: true,
+	//preloadImages: false,
+	//lazy: true,
+
+	effect: 'fade',
+	autoplay: {
+		delay: 1000,
+		disableOnInteraction: false,
+	},
+
+	navigation: {
+		prevEl: '.portfolio__arrow_left',
+		nextEl: '.portfolio__arrow_right',
+	},
+
+	pagination: {
+		el: '.swiper-pagination',
+	},
+
+	on: {},
+})
 
 // Full screen scroll
 function initSlidersScroll() {
