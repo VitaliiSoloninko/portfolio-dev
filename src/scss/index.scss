@@ -23,7 +23,7 @@
 
 	&__title {
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 30, 20);
+			@include adaptiveValue('margin-bottom', 30, 20);
 		}
 	}
 
@@ -31,7 +31,7 @@
 
 	&__text {
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 30, 20);
+			@include adaptiveValue('margin-bottom', 30, 20);
 		}
 	}
 
@@ -56,7 +56,7 @@
 	}
 	@media (max-width: $mobile) {
 		max-width: none;
-		@include adaptiveValue("width", 336, 246);
+		@include adaptiveValue('width', 336, 246);
 	}
 	// .decor-main-section__box
 	&__box {
@@ -64,7 +64,7 @@
 		padding-bottom: percent(400, 336);
 		&::before,
 		&::after {
-			content: "";
+			content: '';
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -79,7 +79,7 @@
 		}
 		&::after {
 			z-index: 2;
-			background: #eae6fe url("@img/main/lines.svg") top right / 58% no-repeat;
+			background: #eae6fe url('@img/main/lines.svg') top right / 58% no-repeat;
 		}
 	}
 	// .decor-main-section__image
@@ -120,7 +120,7 @@
 		gap: rem(20);
 		justify-content: space-between;
 		align-items: center;
-		@include adaptiveValue("margin-bottom", 30, 20);
+		@include adaptiveValue('margin-bottom', 30, 20);
 		@media (max-width: em(600)) {
 			flex-direction: column;
 			align-items: stretch;
@@ -190,7 +190,7 @@
 
 	&__wrapper {
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 20, 15);
+			@include adaptiveValue('margin-bottom', 20, 15);
 		}
 	}
 
@@ -300,8 +300,8 @@
 		display: grid;
 		grid-template-columns: auto;
 		grid-template-rows: auto;
-		@include adaptiveValue("column-gap", 144, 20);
-		@include adaptiveValue("row-gap", 30, 20);
+		@include adaptiveValue('column-gap', 144, 20);
+		@include adaptiveValue('row-gap', 30, 20);
 		@media (min-width: $mobile) {
 			grid-template-columns: auto 1fr;
 			grid-template-rows: auto 1fr;
@@ -323,7 +323,7 @@
 
 	&__content {
 		@media (min-width: $mobile) {
-			@include adaptiveValue("padding-top", 32, 15);
+			@include adaptiveValue('padding-top', 32, 15);
 			grid-row: span 2;
 		}
 	}
@@ -369,7 +369,7 @@
 	// .content-career__header
 
 	&__header {
-		@include adaptiveValue("padding-bottom", 30, 20);
+		@include adaptiveValue('padding-bottom', 30, 20);
 	}
 
 	// .content-career__title
@@ -442,7 +442,7 @@
 			margin-bottom: rem(16);
 		}
 		&::before {
-			content: "";
+			content: '';
 			background-color: #d9d9d9;
 			width: rem(10);
 			height: rem(2);
@@ -469,7 +469,7 @@
 
 	&__title {
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 30, 20);
+			@include adaptiveValue('margin-bottom', 30, 20);
 		}
 	}
 
@@ -478,7 +478,7 @@
 	&__items {
 		align-self: stretch;
 		display: grid;
-		@include adaptiveValue("gap", 40, 20);
+		@include adaptiveValue('gap', 40, 20);
 		grid-template-columns: repeat(auto-fill, minmax(rem(280), 1fr));
 	}
 
@@ -572,7 +572,7 @@
 
 	&__title {
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 80, 60);
+			@include adaptiveValue('margin-bottom', 80, 60);
 		}
 	}
 
@@ -580,7 +580,7 @@
 
 	&__items {
 		display: grid;
-		@include adaptiveValue("column-gap", 40, 20);
+		@include adaptiveValue('column-gap', 40, 20);
 		row-gap: rem(80);
 		grid-template-columns: repeat(auto-fill, minmax(rem(280), 1fr));
 	}
@@ -596,8 +596,8 @@
 	background: #fff;
 	display: flex;
 	flex-direction: column;
-	@include adaptiveValue("padding-left", 38, 10);
-	@include adaptiveValue("padding-right", 38, 10);
+	@include adaptiveValue('padding-left', 38, 10);
+	@include adaptiveValue('padding-right', 38, 10);
 	padding-bottom: rem(28);
 	&__avatar-ibg {
 		border-radius: 50%;
@@ -617,7 +617,7 @@
 	&__text {
 		flex: 1 1 auto;
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 48, 20);
+			@include adaptiveValue('margin-bottom', 48, 20);
 		}
 	}
 
@@ -653,7 +653,7 @@
 
 	&__title {
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 30, 20);
+			@include adaptiveValue('margin-bottom', 30, 20);
 		}
 	}
 
@@ -661,7 +661,7 @@
 
 	&__body {
 		display: grid;
-		@include adaptiveValue("gap", 100, 40);
+		@include adaptiveValue('gap', 100, 40);
 		@media (min-width: em(850)) {
 			grid-template-columns: 1fr percent(750, 1200);
 		}
@@ -683,7 +683,7 @@
 	gap: rem(10);
 	position: relative;
 	&::before {
-		content: "";
+		content: '';
 		position: absolute;
 		left: rem(12);
 		top: em(2.5, 16);
@@ -695,7 +695,7 @@
 		padding-left: rem(40);
 		position: relative;
 		&::before {
-			content: "";
+			content: '';
 			position: absolute;
 			left: rem(4);
 			top: em(2.5, 16);
@@ -707,7 +707,7 @@
 		}
 		&:last-child {
 			&::after {
-				content: "";
+				content: '';
 				z-index: 2;
 				position: absolute;
 				width: 1px;
@@ -735,7 +735,7 @@
 		font-size: rem(14);
 		line-height: math.div(17, 14);
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 18, 10);
+			@include adaptiveValue('margin-bottom', 18, 10);
 		}
 	}
 
@@ -754,7 +754,7 @@
 		font-weight: 500;
 		line-height: math.div(20, 16);
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 25, 15);
+			@include adaptiveValue('margin-bottom', 25, 15);
 		}
 	}
 
@@ -763,11 +763,11 @@
 	&__items {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		@include adaptiveValue("column-gap", 30, 15);
+		@include adaptiveValue('column-gap', 30, 15);
 		row-gap: rem(10);
 		align-items: end;
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 20, 16);
+			@include adaptiveValue('margin-bottom', 20, 16);
 		}
 		@media (max-width: $mobile) {
 			grid-template-columns: repeat(2, 1fr);
@@ -781,7 +781,7 @@
 
 	&__item {
 		display: grid;
-		@include adaptiveValue("margin-bottom", 15, 15);
+		@include adaptiveValue('margin-bottom', 15, 15);
 	}
 
 	// .content-skills__label
@@ -795,7 +795,7 @@
 			margin-bottom: rem(10);
 		}
 		&::before {
-			content: "";
+			content: '';
 			position: absolute;
 			left: 0;
 			top: 0;
@@ -853,7 +853,7 @@
 
 	&__form {
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 20, 10);
+			@include adaptiveValue('margin-bottom', 20, 10);
 		}
 	}
 
@@ -861,7 +861,7 @@
 
 	&__content {
 		@media (min-width: em(850)) {
-			@include adaptiveValue("padding-left", 105, 20);
+			@include adaptiveValue('padding-left', 105, 20);
 		}
 	}
 
@@ -898,7 +898,7 @@
 	&__item-textarea {
 		height: rem(140);
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 24, 16);
+			@include adaptiveValue('margin-bottom', 24, 16);
 		}
 	}
 
@@ -957,7 +957,7 @@ textarea.form__input {
 		align-items: center;
 		gap: rem(24);
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 48, 20);
+			@include adaptiveValue('margin-bottom', 48, 20);
 		}
 	}
 
@@ -1006,8 +1006,8 @@ textarea.form__input {
 
 .page {
 	&__works {
-		@include adaptiveValue("padding-top", 40, 20);
-		@include adaptiveValue("padding-bottom", 40, 20);
+		@include adaptiveValue('padding-top', 40, 20);
+		@include adaptiveValue('padding-bottom', 40, 20);
 	}
 }
 .works {
@@ -1022,7 +1022,7 @@ textarea.form__input {
 
 	&__title {
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 40, 20);
+			@include adaptiveValue('margin-bottom', 40, 20);
 		}
 	}
 
@@ -1041,6 +1041,8 @@ textarea.form__input {
 	}
 
 	&__slide {
+	}
+	&__wrapper {
 		border-radius: rem(20);
 		overflow: hidden;
 		position: relative;
@@ -1061,20 +1063,45 @@ textarea.form__input {
 
 	&__arrow {
 	}
-}
-.title {
-	&__label {
+	&__body {
+		@include adaptiveValue('padding-top', 30, 10);
+		@include adaptiveValue('padding-bottom', 10, 10);
 	}
 
-	&__value {
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		@include adaptiveValue('gap', 20, 20);
+	}
+
+	&__title {
+	}
+
+	&__item {
+		display: flex;
+		gap: rem(10);
+		align-items: center;
 	}
 }
-.portfolio {
-	&__arrow {
-		&_left {
-		}
 
-		&_right {
-		}
+.item-work {
+	&__icon {
+		display: flex;
+		flex: 0 0 auto;
+		justify-content: center;
+		align-items: center;
+		height: rem(32);
+		width: rem(32);
+		border-radius: 50%;
+	}
+
+	&__icon--purple {
+		background-color: $purpleColor;
+	}
+	&__icon--grey {
+		background-color: #666;
+	}
+	&__text {
+		font-size: rem(18);
 	}
 }
